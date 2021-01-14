@@ -79,7 +79,7 @@
             contentType: "application/json",
             headers: {"Content-Type":"text/plain; charset=utf-8", "Accept": "*", "Accept-Language":"es-ES,es;q=0.8"},
             beforeSend: function(client) {
-            //Authorization: "Basic " + btoa(username + ":" + password);
+            client.setRequestHeader('Authorization', "Basic" + btoa(username + ":" + password));
             client.setRequestHeader('Access-Control-Allow-Origin','*');
             },
           })  
