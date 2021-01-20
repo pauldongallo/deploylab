@@ -1,7 +1,7 @@
 <?php
 
 // Redirect all default requests to homepage
-header("Location:/public/admin/login.php");
+header("Location: public/admin/login.php");
 exit;
 
 // Or render a 404 page not found error:
