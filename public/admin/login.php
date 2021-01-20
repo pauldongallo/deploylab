@@ -2,25 +2,6 @@
 
 require_once('../../private/initialize.php');
 
-if(is_post_request()){
-
-	$user['user_id'] = $_POST['user_id'] ?? '';
-	$user['user_email'] = $_POST['user_email'] ?? '';
-	$user['user_nicename'] = $_POST['user_nicename'] ?? '';
-	$user['user_display_name'] = $_POST['user_display_name'] ?? '';
-
-	$storeSession = $session->storeSession($user);
-	if( $storeSession ){
-		redirect_to(url_for('/admin/orders/orders-dashboard.php'));
-	}else{
-		echo $errors[] = "Log in was unsuccessful.";
-	}
-
-}else{
-	$username = $_GET['username'] ?? '';
-	$password = $_GET['password'] ?? '';
-}
-
 include(SHARED_PATH.'/admin_header.php');
 ?>
 <div class="container">

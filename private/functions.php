@@ -16,10 +16,6 @@
  *  7.0 - Footer
 */
 
-require_once(CLASS_PATH.'/order.php');
-require_once(CLASS_PATH.'/note.php');
-
-
  /**
  * Shout accept 1483228800
  * 
@@ -649,8 +645,10 @@ function site_domain_public($paraemter){
 	return $link.'/public'.$paraemter;
 }
 
-function html($paramenter){
-	echo $paramenter;
+function html_view($parameter)
+{
+	echo $parameter;
+	return $parameter;
 }
 
 function array_kshift(&$arr)
