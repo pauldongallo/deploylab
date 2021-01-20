@@ -1,12 +1,3 @@
-/node_modules
-/public/hot
-/public/storage
-/storage/*.key
+/private/class/wc-api-client.php
+/public/assets/js/auth/oauth.js
 /vendor
-/.idea
-/.vagrant
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
-.env
